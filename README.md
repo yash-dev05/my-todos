@@ -5,6 +5,11 @@ It helps users stay organized by managing daily tasks with completion tracking, 
 
 This project demonstrates strong fundamentals of DOM manipulation, event handling, localStorage usage, and UI state management without using any frameworks.
 
+
+## Live Demo
+
+https://yash-dev05.github.io/my-todos/
+
 ✨ Features
 
 ✅ Add new tasks
