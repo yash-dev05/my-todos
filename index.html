@@ -154,6 +154,14 @@
 
         .filter-btn:hover {
             transform: translateY(-1px);
+            background: var(--accent-soft);
+            border-color: var(--accent-400);
+            ;
+
+        }
+
+        .filter-btn:active {
+            transform: translateY(1px);
         }
 
         .filter-btn.active {
@@ -168,7 +176,32 @@
             padding: 0;
             display: grid;
             gap: 10px;
+            max-height: 260px;
+            /* controls visible height */
+            overflow-y: auto;
+            /* enables scrolling */
+            padding-right: 4px;
+            /* space for scrollbar */
         }
+
+        .todo-list::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        .todo-list::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        .todo-list::-webkit-scrollbar-thumb {
+            background: var(--line);
+            border-radius: 10px;
+        }
+
+        .todo-list::-webkit-scrollbar-thumb:hover {
+            background: var(--accent-2);
+        }
+
+
 
         .todo-item {
             display: grid;
@@ -367,7 +400,7 @@
 
 <body>
     <div class="container">
-        <div class="todo-app">
+        <div class="todo-app">  
             <header style="display:flex; justify-content:space-between; align-items:center;">
                 <div>
                     <h1>My Todo App</h1>
@@ -395,49 +428,7 @@
                 </div>
 
                 <ul class="todo-list" id="todoList">
-                    <li class="todo-item">
-                        <div class="checkbox-wrapper-46">
-                            <input type="checkbox" class="inp-cbx todo-checkbox" id="cbx-1" />
-                            <label for="cbx-1" class="cbx">
-                                <span>
-                                    <svg viewBox="0 0 12 10" height="10px" width="12px">
-                                        <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
-                                    </svg>
-                                </span>
-                            </label>
-                        </div>
-                        <span class="todo-text">Review pull requests</span>
-                        <button class="delete-btn">&times;</button>
-                    </li>
-
-                    <li class="todo-item completed">
-                        <div class="checkbox-wrapper-46">
-                            <input type="checkbox" class="inp-cbx todo-checkbox" id="cbx-1" />
-                            <label for="cbx-" class="cbx">
-                                <span>
-                                    <svg viewBox="0 0 12 10" height="10px" width="12px">
-                                        <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
-                                    </svg>
-                                </span>
-                            </label>
-                        </div>
-                        <span class="todo-text">Review pull requests</span>
-                        <button class="delete-btn">&times;</button>
-                    </li>
-                    <li class="todo-item">
-                        <div class="checkbox-wrapper-46">
-                            <input type="checkbox" class="inp-cbx todo-checkbox" id="cbx-2" />
-                            <label for="cbx-2" class="cbx">
-                                <span>
-                                    <svg viewBox="0 0 12 10" height="10px" width="12px">
-                                        <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
-                                    </svg>
-                                </span>
-                            </label>
-                        </div>
-                        <span class="todo-text">Update team on progress</span>
-                        <button class="delete-btn">&times;</button>
-                    </li>
+                    
 
                 </ul>
                 <div class="todo-footer">
