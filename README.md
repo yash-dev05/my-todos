@@ -39,6 +39,7 @@ my-todos/
 ├── style.css (optional if separated)
 └── README.md
 ⚙️ How It Works (Under the Hood)
+
 1️⃣ Todos Stored as Objects
 
 Each todo is stored like:
@@ -47,6 +48,7 @@ Each todo is stored like:
   title: "Study JavaScript",
   isCompleted: false
 }
+
 2️⃣ Data Persistence
 
 Tasks are saved using:
@@ -94,7 +96,7 @@ completing tasks
 
 Clone the repository:
 
-git clone https://github.com/yourusername/my-todos.git
+git clone https://github.com/yash-dev05/my-todos.git
 
 Open:
 
